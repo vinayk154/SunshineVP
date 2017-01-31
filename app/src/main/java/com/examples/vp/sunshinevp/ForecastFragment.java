@@ -87,7 +87,7 @@ public class ForecastFragment extends Fragment {
         if (id == R.id.action_refresh)
         {
             Log.v("refresh clicked","rfreshh clicked");
-            new FetchEWeatherTask().execute("94043");
+            new FetchEWeatherTask().execute("DUBLIN4");
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -217,7 +217,7 @@ public class ForecastFragment extends Fragment {
             String forecastJsonStr=null;
             String format="json";
             String units="metric";
-            int numDay=7;
+            int numDay=10;
             try{
 
 
